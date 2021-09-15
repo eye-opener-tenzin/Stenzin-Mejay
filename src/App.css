@@ -1,0 +1,40 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+:root {
+    --primary-white: #ffff;
+    --primary-orange: #f9ab00;
+}
+
+/* Navigation Bar*/
+.myLogo {
+    width: 5rem
+}
+
+.navbar-nav {
+    align-items: end !important;
+}
+
+nav a.nav-link {
+    font-size: 1.1rem;
+    letter-spacing: 0.0357rem;
+    cursor: pointer;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+.navbar-nav > li > a {
+    margin: 0 0.75rem;
+    color: var(--primary-white) !important
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+    border-bottom: solid var(--primary-orange) ;
+}
+
+.navbar-nav > li > a:hover {
+    border-bottom: solid var(--primary-orange) ;
+
+}
