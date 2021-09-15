@@ -5,9 +5,14 @@ body {
 :root {
     --primary-white: #ffff;
     --primary-orange: #f9ab00;
+    --primary-red: #ef4035;
+    --primary-hover-red: #f33501;
 }
 
-/* Navigation Bar*/
+/* @navigation Bar*/
+nav {
+    z-index: 2;
+}
 .myLogo {
     width: 5rem
 }
@@ -37,4 +42,78 @@ nav ul li {
 .navbar-nav > li > a:hover {
     border-bottom: solid var(--primary-orange) ;
 
+}
+
+/* @header*/
+.header-wraper {
+    position: relative;
+    background: url(coding-image.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+
+}
+
+.header-info {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    z-index: 2;
+}
+
+.header-info h1 {
+    color:var(--primary-orange)
+}
+
+/* @typed text*/
+
+.typed-text {
+    font-size: 2rem;
+    color: var(--primary-white)
+}
+
+@media(max-width: 768px) {
+    .header-info h1  {
+        font-size: 1.5rem  !important ;
+    }
+    .typed-text {
+        font-size: 1rem !important;
+    }
+    .btn-contact {
+       font-size: 0.8rem !important;
+    
+}
+}
+ /*@contact Button*/
+.btn-contact {
+    border: 1px solid var(--primary-red);
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    padding: 0.65rem 0.75rem;
+    color: var(--primary-white);
+    margin-top: 2rem;
+
+
+}
+
+
+.btn-contact:hover{
+    background-color:var(--primary-hover-red);
+    color: var(--primary-white);
+    transition:   .2s ease-in-out;
+}
+
+/*@particles*/
+.tsparticles-canvas-el {
+    position: absolute;
+    height: 100vw;
+    width: 100%;
+    z-index: 1;
 }
